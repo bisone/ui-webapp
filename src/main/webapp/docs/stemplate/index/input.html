@@ -37,7 +37,7 @@
                             <label for="dtp_input1" class="col-md-2 control-label">DateTime Picking</label>
                             <div class="input-group date form_datetime col-md-5" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
                                 <input class="form-control" size="16" type="text" value="" readonly>
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span> <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span> </div>
+                               <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span> </div>
                             <input type="hidden" id="dtp_input1" value="" />
                             <br/>
                         </div>
@@ -45,7 +45,7 @@
                             <label for="dtp_input2" class="col-md-2 control-label">Date Picking</label>
                             <div class="input-group date form_date col-md-5" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
                                 <input class="form-control" size="16" type="text" value="" readonly>
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span> <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span> </div>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span> </div>
                             <input type="hidden" id="dtp_input2" value="" />
                             <br/>
                         </div>
@@ -53,7 +53,7 @@
                             <label for="dtp_input3" class="col-md-2 control-label">Time Picking</label>
                             <div class="input-group date form_time col-md-5" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
                                 <input class="form-control" size="16" type="text" value="" readonly>
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span> <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span> </div>
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span> </div>
                             <input type="hidden" id="dtp_input3" value="" />
                             <br/>
                         </div>
@@ -68,10 +68,9 @@ bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.zh-CN.js
 2.html文件
 &lt;div class="input-append date form_datetime" data-date="2013-02-21T15:25:00Z"&gt;
     &lt;input type="hidden" id="dtp_input2" value="" /&gt;
-    &lt;span class="add-on"&gt;&lt;i class="icon-remove"&gt;&lt;/i&gt;&lt;/span&gt;
     &lt;span class="add-on"&gt;&lt;i class="icon-calendar"&gt;&lt;/i&gt;&lt;/span&gt;
 &lt;/div&gt;
-3.函数调用
+3.函数调用---详情见input.js
 &lt;script type="text/javascript"&gt;
     $(".form_datetime").datetimepicker({
     	language:  'zh-CN',//语言
@@ -109,6 +108,7 @@ bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.zh-CN.js
            &lt;/div&gt;
 	&lt;/label&gt;
 &lt;/div&gt;
+3.函数调用---详情见input.js
 </pre>
             </div>
             <h4>comboMenu</h4>
@@ -135,6 +135,7 @@ bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.zh-CN.js
                 &lt;/div&gt;
         &lt;/label&gt;
 &lt;/div&gt;
+3.函数调用---详情见input.js
 </pre>
             </div>
             <h4>区域选择</h4>
@@ -153,6 +154,8 @@ bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.zh-CN.js
             </div>
             <div class="highlight">
                 <pre>
+
+2.html文件
    &lt;div class="form-group"&gt;
         &lt;div style="border:1px solid #bbb;background:white;padding-left:10px;height:32px;width:190px;" &gt;
                  &lt;span style="line-height:30px;vertical-align: top;"&gt;地区:&lt;/span&gt;
@@ -162,6 +165,7 @@ bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.zh-CN.js
                     &lt;input name="citycategory" id="citycategory" style="display: none" value="" /&gt;
           &lt;/div&gt;
 &lt;/div&gt;
+3.函数调用---详情见input.js
 </pre>
             </div>
             <div id="collapseOne" class="panel-collapse collapse in"> </div>
@@ -179,13 +183,16 @@ bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.zh-CN.js
             </div>
             <div class="highlight">
                 <pre>
-  1.js文件
-  
-  
+ 1.js文件
+ 'src/widget/jquery.inputmask.js',
+ 'src/widget/jquery.inputmask.date.extensions.js',
+ 'src/widget/jquery.inputmask.extensions.js',
+ 2.html文件
  &lt;div class="input-group">
  &lt;div class="input-group-addon"&gt; &lt;i class="fa fa-calendar"&gt;&lt;/i&gt;&lt;/div&gt;
     &lt;input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/&gt;
   &lt;/div&gt;
+  3.函数调用---详情见input.js
 </pre>
             </div>
             
@@ -201,10 +208,16 @@ bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.zh-CN.js
             </div>
             <div class="highlight">
                 <pre>
+ 1.js文件
+ 'src/widget/jquery.inputmask.js',
+ 'src/widget/jquery.inputmask.date.extensions.js',
+ 'src/widget/jquery.inputmask.extensions.js',
+2.html文件
  &lt;div class="input-group"&gt;
     &lt;div class="input-group-addon"&gt; &lt;i class="fa fa-calendar"&gt;&lt;/i&gt; &lt;/div&gt;
 	&lt;input type="text" class="form-control" data-inputmask="'alias': 'mm/dd/yyyy'" data-mask/&gt;
 &lt;/div&gt;
+3.函数调用---详情见input.js
 </pre>
             </div>
             
@@ -223,10 +236,16 @@ bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.zh-CN.js
             </div>
             <div class="highlight">
                 <pre>
+ 1.js文件
+ 'src/widget/jquery.inputmask.js',
+ 'src/widget/jquery.inputmask.date.extensions.js',
+ 'src/widget/jquery.inputmask.extensions.js',
+ 2.html文件
  &lt;div class="input-group"&gt;
     &lt;div class="input-group-addon"&gt; &lt;i class="fa fa-phone"&gt;&lt;/i&gt; &lt;/div&gt;
     &lt;input type="text" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask/&gt;
 &lt;/div&gt;
+3.函数调用---详情见input.js
 </pre>
             </div>
             <!-- phone mask -->
@@ -244,10 +263,16 @@ bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.zh-CN.js
             </div>
             <div class="highlight">
                 <pre>
+ 1.js文件
+ 'src/widget/jquery.inputmask.js',
+ 'src/widget/jquery.inputmask.date.extensions.js',
+ 'src/widget/jquery.inputmask.extensions.js',
+ 2.html文件
  &lt;div class="input-group"&gt;
   &lt;div class="input-group-addon"&gt; &lt;i class="fa fa-phone"&gt;&lt;/i&gt; &lt;/div&gt;
   &lt;input type="text" class="form-control" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask/&gt;
 &lt;/div&gt;
+3.函数调用---详情见input.js
 </pre>
             </div>
             <div class="bs-example">
@@ -262,13 +287,17 @@ bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.zh-CN.js
             </div>
             <div class="highlight">
                 <pre>
-
+1.js文件
+ 'src/widget/jquery.inputmask.js',
+ 'src/widget/jquery.inputmask.date.extensions.js',
+ 'src/widget/jquery.inputmask.extensions.js',
+2.html文件
 &lt;div class="input-group"&gt;
     &lt;div class="input-group-addon"&gt; &lt;i class="fa fa-laptop"&gt;&lt;/i&gt; &lt;/div&gt;
     &lt;input type="text" class="form-control" data-inputmask="'alias': 'ip'" data-mask/&gt;
 &lt;/div&gt;
                         <!-- /.input group --> 
-                  
+ 3.函数调用---详情见input.js                 
 </pre>
             </div>
         </div>

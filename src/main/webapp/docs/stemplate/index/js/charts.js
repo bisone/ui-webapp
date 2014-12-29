@@ -1,7 +1,5 @@
 // JavaScript Document
-        $(function() {
-
-        
+        $(function() {  
                 /* END JQUERY KNOB */
 
                 //INITIALIZE SPARKLINE CHARTS
