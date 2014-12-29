@@ -97,9 +97,17 @@
 <div class="highlight">
 <pre>
 实例
-js文件:
+1.js文件:
 &lt;script type="text/javascript" src="jquery.sparkline.js"&gt;&lt;/script&gt; 
-&lt;script type="text/javascript"&gt;  
+2.html代码
+柱状图
+&lt;div class="sparkline" data-type="bar" data-width="70px" data-height="50px" data-bar-Width="5" data-bar-Spacing="2" &gt; 6,4,8, -9, 10,  18, 21, -7, 9 &lt;/div&gt;
+饼图
+ &lt;div class="sparkline" data-type="pie" data-offset="90" data-width="50px" data-height="50px"&gt; 6,4,8 &lt;/div&gt;
+ 线形图
+ &lt;div class="sparkline" data-type="line" data-spot-Radius="2" data-highlight-Spot-Color="#f39c12" data-highlight-Line-Color="#222" data-min-Spot-Color="#f56954" data-max-Spot-Color="#00a65a" data-spot-Color="#39CCCC" data-offset="90" data-width="75px" data-height="50px" data-line-Width='1' data-line-Color='#39CCCC' data-fill-Color='rgba(57, 204, 204, 0.08)'&gt; 6,4,7,8,4,3,2,2,5,6,7,4,1,5,7,9,9,8,7,6 &lt;/div&gt;
+3.函数调用
+
     $(function() {  
         // 我们可以将值直接放入到span中  
         $('.inlinesparkline').sparkline();   
@@ -114,14 +122,8 @@ js文件:
         // 使用'html' 参数的话是制定数据在标签中，代替一个数组值  
         $('.inlinebar').sparkline('html', {type: 'bar', barColor: 'red'} );  
     });  
-    &lt;/script&gt;
-html文件：
-柱状图
-&lt;div class="sparkline" data-type="bar" data-width="70px" data-height="50px" data-bar-Width="5" data-bar-Spacing="2" &gt; 6,4,8, -9, 10,  18, 21, -7, 9 &lt;/div&gt;
-饼图
- &lt;div class="sparkline" data-type="pie" data-offset="90" data-width="50px" data-height="50px"&gt; 6,4,8 &lt;/div&gt;
- 线形图
- &lt;div class="sparkline" data-type="line" data-spot-Radius="2" data-highlight-Spot-Color="#f39c12" data-highlight-Line-Color="#222" data-min-Spot-Color="#f56954" data-max-Spot-Color="#00a65a" data-spot-Color="#39CCCC" data-offset="90" data-width="75px" data-height="50px" data-line-Width='1' data-line-Color='#39CCCC' data-fill-Color='rgba(57, 204, 204, 0.08)'&gt; 6,4,7,8,4,3,2,2,5,6,7,4,1,5,7,9,9,8,7,6 &lt;/div&gt;
+
+
 </pre>
 </div>
 </div>

@@ -102,16 +102,15 @@
 2.HTML内容
 &lt;div id="treeview1"&gt;&lt;/div&gt;
 3.函数调用
-&lt;script type="text/javascript" src="js/treeview.js"&gt;&lt;/script&gt;
 //可以设置图标，字体颜色，背景颜色；
  $('#treeview1').treeview({
-  		  expandIcon: "fa fa-plus-square",
-          collapseIcon: "fa fa-minus-square",
-          nodeIcon: "glyphicon glyphicon-user",
+  		  expandIcon: "fa fa-plus-square",//设置展开图标
+          collapseIcon: "fa fa-minus-square",//设置收起图标
+          nodeIcon: "glyphicon glyphicon-user",//设置默认字段图标（可修改）
           color: "#fff",
-          backColor: "#1ABC9C",
-          onhoverColor: "#16A085",
-          borderColor: "#34495E",
+          backColor: "#1ABC9C",//设置背景颜色
+          onhoverColor: "#16A085",//设置鼠标移上的背景颜色
+          borderColor: "#34495E",//设置边框颜色
           showBorder: false,
           showTags: true,
           highlightSelected: true, 
