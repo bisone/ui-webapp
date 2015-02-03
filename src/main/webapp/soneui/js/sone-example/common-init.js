@@ -1,5 +1,6 @@
 
 $(function() {
+	//IFrame高度
 	$('#ifm').iFrameResize({
 	    //log : true
 	});
